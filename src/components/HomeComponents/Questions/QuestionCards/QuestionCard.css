@@ -1,0 +1,55 @@
+.QuestionCard {
+  border-radius: 8px;
+  background: #ecf7ff;
+  padding: 30px 35px;
+}
+.QuestionCard h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px; /* 117.391% */
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.QuestionCard p {
+  color: #000;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  text-transform: capitalize;
+}
+.QuestionCardDark {
+  border-radius: 8px;
+  background: #0a2640;
+  padding: 30px 35px;
+}
+.QuestionCardDark h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px; /* 117.391% */
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.QuestionCardDark p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .QuestionCardDark h2 {
+    font-size: 16px;
+  }
+  .QuestionCardDark p {
+    font-size: 12px;
+  }
+  .QuestionCard h2 {
+    font-size: 16px;
+  }
+  .QuestionCard p {
+    font-size: 12px;
+  }
+}

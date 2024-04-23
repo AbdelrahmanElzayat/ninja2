@@ -1,0 +1,38 @@
+.LocationCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px 15px;
+}
+.imgLocation {
+  width: 111.06px;
+  height: 83.3px;
+}
+.imgLocation img {
+  max-width: 100%;
+  height: 100%;
+}
+.locationCardContent {
+  flex: 1;
+}
+.locationCardContent h2 {
+  cursor: pointer;
+  color: #0055b8;
+  margin: 0;
+  font-family: Cairo;
+  font-size: 17.578px;
+  font-weight: 500;
+  line-height: 30.86px; /* 175.559% */
+}
+.locationCardContent p {
+  margin: 0;
+  color: #000;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 11.813px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.57px; /* 174.138% */
+}

@@ -1,0 +1,14 @@
+.NotFound {
+  padding: 100px 0 !important;
+}
+.NotFound .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0 !important;
+}
+.NotFound img {
+  width: 600px;
+  max-width: 100%;
+}

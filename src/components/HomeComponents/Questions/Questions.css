@@ -1,0 +1,26 @@
+.Questions{
+    padding: 60px 0;
+    position: relative;
+}
+.Questions .container{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    gap: 20px;
+}
+.icontop, .iconBtm,.iconLeft{
+    position: absolute;
+}
+.iconBtm{
+    bottom: 0;
+}
+.iconLeft{
+    left: 0;
+    top: 50%;
+    transform: translateY(50%);
+}
+@media(max-width:767px){
+    .Questions .container{
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+}

@@ -1,0 +1,85 @@
+.HeadCard,.MainCard{
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+}
+.HeadCard::after,.MainCard::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,.2);
+    z-index: 2;
+}
+.MainCard_title , .MainCard_footer,.HeadCard_title , .HeadCard_footer{
+    z-index: 3;
+}
+@media(min-width:994px){
+.HeadCard{
+    height: 310px;
+}
+.MainCard{
+    width: 608px;
+}
+}
+.MainCard{
+    grid-area:main-card;
+}
+
+.MainCard_title,.HeadCard_title,.HeadCard_footer,.MainCard_footer{
+    position: absolute;
+}
+.HeadCard_footer,.MainCard_footer{
+    bottom: 0;
+    color: #fff;
+}
+.MainCard_title,.HeadCard_title{
+    top: 15px;
+    left: 4px;
+    border-radius: 9999px;
+    border: 1px solid #B7BBDB;
+    background: #F0FAFF;
+    padding: 2px 10px;
+
+    color: #0A2640;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+.HeadCard_footer,.MainCard_footer{
+    /* background: #000; */
+    padding: 20px 10px;
+    width: 100%;
+}
+.HeadCard_footer h4,.MainCard_footer h4{
+    color: #FFF;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    text-transform: capitalize;
+}
+
+.HeadCard_img , .MainCard_img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.HeadCard_img img , .MainCard_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* .HeadCard_img{
+    height: 310px;
+} */
+
+

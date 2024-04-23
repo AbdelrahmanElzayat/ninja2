@@ -1,0 +1,198 @@
+.Advantage {
+  width: 100%;
+  height: 578px;
+  background: #fff;
+  position: relative;
+  margin: 0 0 180px 0;
+}
+.advRight {
+  background: #ecf7ff;
+  border-radius: 400px 0 0 0;
+  width: 90vw;
+  height: 110%;
+  position: relative;
+  z-index: 1;
+}
+.advIcon {
+  top: 0;
+  right: 0;
+}
+.circleImg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-20%);
+}
+.Advantage .mainHead {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+  z-index: 10;
+}
+.mainHead h2 {
+  color: #331b3b;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 106.3%; /* 51.024px */
+  letter-spacing: -0.48px;
+}
+.mainHead p {
+  color: #a9a9a9;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+}
+.scrollCard {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+  /* max-width: 400px !important; */
+  height: 160px;
+  direction: rtl;
+  transition: all 0.3s;
+  cursor: pointer;
+  width: 320px;
+  /* width: 95% !important; */
+}
+@media (max-width: 767px) {
+  .scrollCard {
+    width: 90% !important;
+    margin: auto;
+  }
+}
+.iconImg {
+  border-radius: 10px;
+  background: #ffd4d4;
+  width: fit-content;
+  padding: 10px;
+}
+.iconImg2 {
+  background: #d4f5ff !important;
+}
+.iconImg3 {
+  background: #ffeed4 !important;
+}
+.iconImg4 {
+  background: #d4ffe3 !important;
+}
+.iconImg5 {
+  background: #e2d4ff !important;
+}
+.iconImg6 {
+  background: #fed4ff !important;
+}
+.iconImg img {
+  max-width: 30px;
+}
+.scrollCard h2 {
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 137.3%; /* 21.968px */
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.scrollCard p {
+  color: rgba(51, 27, 59, 0.66);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 145.3%; /* 21.795px */
+  letter-spacing: 0.3px;
+  text-align: right;
+  margin: 0;
+}
+.scrollCard:hover {
+  background: var(--bg-color);
+}
+.scrollCard:hover h2,
+.scrollCard:hover p {
+  color: #fff;
+}
+.scrollSwipe {
+  position: relative;
+  height: 100% !important;
+}
+.scrollSwipe .carousel-container {
+  position: relative !important;
+  left: -250px;
+  bottom: 550px;
+  /* top: 50%; */
+  z-index: 1;
+  height: 100%;
+  /* width: 100%; */
+}
+.scrollSwipe .carousel-container ul {
+  /* gap: 0px !important; */
+}
+.scrollSwipe .carousel-container li {
+  /* width: 100% !important; */
+  width: 390px !important;
+  flex: auto !important;
+
+  /* width: fit-content !important; */
+}
+.scrollSwipe .custom_btn_left,
+.scrollSwipe .custom_btn_right {
+  position: absolute;
+  /* right: 0; */
+  bottom: 100px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+}
+.scrollSwipe .custom_btn_right {
+  right: 0;
+}
+.scrollSwipe .custom_btn_left {
+  right: 50px;
+}
+
+@media (max-width: 767px) {
+  .mainHead h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .mainHead p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .scrollSwipe {
+    right: 0;
+    /* left: 0; */
+  }
+  .scrollSwipe .carousel-container {
+    left: 0 !important;
+  }
+  .advRight {
+    /* padding: 80px 0; */
+    width: 100%;
+    border-radius: 0;
+  }
+  .circleImg {
+    display: none;
+  }
+  .scrollSwipe .custom_btn_right {
+    right: 37%;
+    /* transform: translateX(-40%); */
+  }
+  .scrollSwipe .custom_btn_left {
+    left: 37%;
+    /* transform: translateX(-40%); */
+  }
+}

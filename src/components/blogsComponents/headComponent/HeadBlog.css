@@ -1,0 +1,39 @@
+.HeadBlog{
+    margin: 100px 0;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'head-card1 main-card main-card head-card2'
+    'head-card3 main-card main-card head-card4';
+}
+@media(min-width:994px){
+    .HeadBlog{
+        height: 636px;
+    }
+}
+.main1{
+    grid-area: head-card1;
+}
+.main2{
+    grid-area: head-card2;
+}
+.main3{
+    grid-area: head-card3;
+}
+.main4{
+    grid-area: head-card4;
+}
+
+@media(max-width:767px){
+    .HeadBlog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main1,.main2,.main3,.main4,.MainCard{
+        width: 100% !important;
+        height: 320px !important;
+    }
+}

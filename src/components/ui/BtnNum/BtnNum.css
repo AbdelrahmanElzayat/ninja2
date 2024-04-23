@@ -1,0 +1,22 @@
+.QemaBtn{
+    width: 39px;
+    height: 39px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0A2640;
+    color: var(--text-color, #FFF);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 257%; /* 56.54px */
+}
+@media(max-width:767px){
+    .QemaBtn{
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+}

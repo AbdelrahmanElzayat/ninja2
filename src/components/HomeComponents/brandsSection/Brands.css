@@ -1,0 +1,39 @@
+.Brands{
+    padding: 44px 0;
+    width: 100%;
+}
+.BrandsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.brand1{
+    background: url(../../../assets/images/tornado.png), lightgray 50%;
+}
+.brand2{
+    background: url(../../../assets/images/fresh.png), lightgray 50%;
+}
+.brand3{
+    background: url(../../../assets/images/beko.png), lightgray 50%;
+}
+.brand4{
+    background: url(../../../assets/images/zanussi.png), lightgray 50%;
+}
+.brand5{
+    background: url(../../../assets/images/beko.png), lightgray 50%;
+}
+.brand6{
+    background: url(../../../assets/images/zanussi.png), lightgray 50%;
+}
+.BrandImg_test{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-blend-mode: luminosity !important;
+    width: 110px;
+    height: 48px;
+}

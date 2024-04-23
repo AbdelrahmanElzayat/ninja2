@@ -1,0 +1,34 @@
+.Common {
+  background: var(--bg-color);
+  padding: 130px 0 60px;
+}
+.Common .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Common h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
+}
+.Common p {
+  color: #e1e1e1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  text-transform: capitalize;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .Common h2 {
+    font-size: 20px;
+  }
+  .Common p {
+    font-size: 16px;
+  }
+}

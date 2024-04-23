@@ -1,0 +1,63 @@
+.Blogs{
+    padding: 60px 0;
+}
+.Blogs_headerSearch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.Blogs_headerSearch h4{
+    color: #331B3B;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 106.3%; /* 36.142px */
+    letter-spacing: -0.34px;
+}
+.searchInput{
+    background: #fff;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #0A2640;
+    padding: 5px;
+    width: 384px;
+}
+.Blogs_headerSearch input{
+    height: 100%;
+    padding: 12px 18px;
+    width: 95%;
+    border: none;
+    outline: none;
+}
+.Blogs_headerSearch i{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    opacity: .6;
+
+}
+.Blogs_headerSearch input::placeholder{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 106.3%; /* 15.945px */
+    letter-spacing: -0.15px;
+}
+.seeMoreBlogs a{
+    text-decoration: none;
+    color: #0A2640;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px; /* 83.333% */
+
+    border-radius: 50px;
+    border: 3px solid #0A2640;
+    padding: 7px 30px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}

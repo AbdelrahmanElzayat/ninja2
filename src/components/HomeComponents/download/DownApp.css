@@ -1,0 +1,55 @@
+.DownApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background: url("../../../assets/images/bgDown.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 426px;
+  position: relative;
+  z-index: 2;
+}
+.DownApp::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(10, 38, 64, 0.8);
+}
+.DownApp .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.DownApp .container h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 73px; /* 182.5% */
+}
+.downBadges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.downBadges img {
+  max-width: 200px;
+}
+@media (max-width: 767px) {
+  .DownApp .container h2 {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .downBadges img {
+    max-width: 150px;
+  }
+}
