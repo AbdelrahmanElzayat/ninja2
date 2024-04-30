@@ -135,10 +135,15 @@
 }
 .scrollSwipe .carousel-container li {
   /* width: 100% !important; */
-  width: 390px !important;
+  /* width: 390px !important; */
   flex: auto !important;
 
   /* width: fit-content !important; */
+}
+@media(min-width:994px){
+  .scrollSwipe .carousel-container li{
+    width: 390px !important;
+  }
 }
 .scrollSwipe .custom_btn_left,
 .scrollSwipe .custom_btn_right {
