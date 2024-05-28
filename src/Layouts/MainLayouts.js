@@ -1,8 +1,8 @@
-import React from 'react'
-import './MainLayout.css'
-import Header from '../components/layouts/Header/Header'
-import Footer from '../components/layouts/Footer/Footer'
-import { useLocation } from 'react-router-dom'
+import React from "react";
+import "./MainLayout.css";
+import Header from "../components/layouts/Header/Header";
+import Footer from "../components/layouts/Footer/Footer";
+import { useLocation } from "react-router-dom";
 const MainLayouts = (props) => {
   const location = useLocation();
 
@@ -10,13 +10,24 @@ const MainLayouts = (props) => {
   const currentPathname = location.pathname;
   return (
     <>
-      <Header class={currentPathname === '/' ? `header` : 'header2'}/>
-        <main>
-            {props.children}
-        </main>
-      <Footer />
+      <Header
+        class={
+          currentPathname === "/"
+            ? `header`
+            : currentPathname === "/download-ninja"
+              ? "header3"
+              : "header2"
+        }
+      />
+      <main>{props.children}</main>
+      <Footer
+       class={
+          currentPathname === "/download-ninja"
+            ? `footer3`
+            : ''
+        }/>
     </>
   );
-}
+};
 
-export default MainLayouts
+export default MainLayouts;

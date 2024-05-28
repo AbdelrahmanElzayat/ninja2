@@ -53,8 +53,6 @@ const Brands = () => {
             // }}
             // modules={[Pagination]}
             className="mySwiper"
-
-
             centeredSlides={isMobile && true}
             autoplay={{
               delay: 2500,
@@ -64,11 +62,8 @@ const Brands = () => {
             loop={true}
           >
             {imgs.map((item, index) => (
-              <SwiperSlide>
-                <div
-                  className={`BrandImg_test ${item.className}`}
-                  key={index}
-                ></div>
+              <SwiperSlide key={index}>
+                <div className={`BrandImg_test ${item.className}`}></div>
               </SwiperSlide>
             ))}
           </Swiper>

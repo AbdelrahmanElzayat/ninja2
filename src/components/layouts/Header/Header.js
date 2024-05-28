@@ -2,8 +2,45 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import { Container } from "react-bootstrap";
 import logo from "../../../assets/images/icon.png";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 const Header = (props) => {
+  const [url, setUrl] = useState();
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Function to check if device is iOS
+    const isIOS = () => {
+      return /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    };
+
+    // Function to check if device is Android
+    const isAndroid = () => {
+      return /android/i.test(userAgent);
+    };
+
+    // Function to check if device is Windows
+    const isWindows = () => {
+      return /windows/i.test(userAgent);
+    };
+
+    // Function to check if device is Mac
+    const isMac = () => {
+      return /macintosh|mac os x/i.test(userAgent);
+    };
+
+    //   console.log(isIOS());
+
+    if (isIOS() || isMac()) {
+      setUrl("https://apps.apple.com/eg/app/id6496852097");
+    } else if (isAndroid() || isWindows()) {
+      setUrl("https://play.google.com/store/apps/details?id=net.ninjaHome.app");
+    } else {
+      // Default redirection if platform is not recognized
+      setUrl("https://play.google.com/store/apps/details?id=net.ninjaHome.app");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
 
@@ -58,7 +95,9 @@ const Header = (props) => {
           </ul>
         </div>
         <div className="btndownload">
-          <a href="##">تحميل التطبيق</a>
+          <Link to={url} target="blank">
+            تحميل التطبيق
+          </Link>
         </div>
         <div className="menu_icon" onClick={toggleMenuAction}>
           <i className="ri-menu-2-line"></i>

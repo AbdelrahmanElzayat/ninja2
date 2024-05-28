@@ -9,10 +9,28 @@ import UsagePolicy from "./pages/UsagePolicy/UsagePolicy.js";
 import NotFound from "./pages/NotFound/NotFound.js";
 import Location from "./pages/locations/Location.js";
 import Numbers from "./pages/Numbers/Numbers.js";
-
+import DeleteAccount from "./pages/DeleteAccount/DeleteAccount.js";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import RedirectToStore from "./pages/redirect/Redirect.js";
+import DownloadPage from "./pages/DownloadPage/DownloadPage.js";
 function App() {
+  // if ("geolocation" in navigator) {
+  //   navigator.geolocation.getCurrentPosition(
+  //     (position) => {
+  //       console.log("Latitude:", position.coords.latitude);
+  //       console.log("Longitude:", position.coords.longitude);
+  //     },
+  //     (error) => {
+  //       console.error("Error getting geolocation:", error.message);
+  //     }
+  //   );
+  // } else {
+  //   console.log("Geolocation is not supported by this browser.");
+  // }
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
@@ -23,6 +41,9 @@ function App() {
         <Route path="/usage-policy" element={<UsagePolicy />} />
         <Route path="/location" element={<Location />} />
         <Route path="/hot-line" element={<Numbers />} />
+        <Route path="/delete-account" element={<DeleteAccount />} />
+        <Route path="/download" element={<RedirectToStore />} />
+        <Route path="/download-ninja" element={<DownloadPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

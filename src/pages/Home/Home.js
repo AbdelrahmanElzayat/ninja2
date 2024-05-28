@@ -9,10 +9,12 @@ import Questions from "../../components/HomeComponents/Questions/Questions";
 import Review from "../../components/HomeComponents/sayAbout/Review";
 import FooterMain from "../../components/layouts/Footer/FooterMain";
 import { Helmet } from "react-helmet-async";
+import usePageViews from "../../utils/Hook/usePageViews";
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  usePageViews();
   return (
     <MainLayouts>
       <Helmet>

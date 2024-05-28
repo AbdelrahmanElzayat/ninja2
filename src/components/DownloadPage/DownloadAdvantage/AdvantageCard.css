@@ -1,0 +1,49 @@
+.AdvantageCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 28px;
+
+  border-radius: 12px;
+  background: #fff;
+  box-shadow:
+    0px -4px 12px 0px rgba(0, 0, 0, 0.12),
+    0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+  height: 124px;
+
+  padding: 30px 20px;
+}
+.AdvantageCardImg {
+  width: 60px;
+}
+.AdvantageCardImg img {
+  max-width: 100%;
+}
+.AdvantageCardContent h3 {
+  margin: 0;
+  color: #0a2640;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.AdvantageCardContent p {
+  margin: 0;
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 400;
+  /* width: 250px; */
+
+}
+.cardList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.cardList .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  gap: 20px;
+  /* padding: 0 16px !important; */
+}

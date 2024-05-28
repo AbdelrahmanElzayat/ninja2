@@ -1,0 +1,11 @@
+.deleteAccountPage{
+    padding: 100px 0;
+    /* margin-top: 80px; */
+}
+.deleteAccountPage .container{
+    display: flex;
+    justify-content: center;
+}
+.deleteAccountContainer{
+    width: 50%;
+}

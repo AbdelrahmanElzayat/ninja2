@@ -92,7 +92,7 @@ const Location = () => {
                   </GoogleMapReact>
             </div> */}
             <div style={{ height: "80vh", width: "100%" }}>
-              <APIProvider apiKey={""}>
+              <APIProvider apiKey={"AIzaSyAXv4RQK39CskcIB8fvM1Q7XCofZcLxUXw"}>
                 <Map
                   defaultCenter={position}
                   defaultZoom={20}

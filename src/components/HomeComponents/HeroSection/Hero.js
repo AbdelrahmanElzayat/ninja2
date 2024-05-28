@@ -35,10 +35,10 @@ const Hero = () => {
             )}
             <p>حمل التطبيق و استمتع الان بتجربه الخدمات</p>
             <div className="downloadBtns">
-              <a href="##">
+              <a href="https://apps.apple.com/eg/app/id6496852097" target="blank">
                 <img src={appStore} alt="appStore" />
               </a>
-              <a href="##">
+              <a href="https://play.google.com/store/apps/details?id=net.ninjaHome.app" target="blank">
                 <img src={googlePlay} alt="googlePlay" />
               </a>
             </div>

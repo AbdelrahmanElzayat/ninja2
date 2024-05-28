@@ -1,11 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import { Container } from "react-bootstrap";
 import logo from "../../../assets/images/logoFooter.png";
 import { Link } from "react-router-dom";
-const Footer = () => {
+const Footer = (props) => {
+  const [url, setUrl] = useState();
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Function to check if device is iOS
+    const isIOS = () => {
+      return /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    };
+
+    // Function to check if device is Android
+    const isAndroid = () => {
+      return /android/i.test(userAgent);
+    };
+
+    // Function to check if device is Windows
+    const isWindows = () => {
+      return /windows/i.test(userAgent);
+    };
+
+    // Function to check if device is Mac
+    const isMac = () => {
+      return /macintosh|mac os x/i.test(userAgent);
+    };
+
+    //   console.log(isIOS());
+
+    if (isIOS() || isMac()) {
+      setUrl("https://apps.apple.com/eg/app/id6496852097");
+    } else if (isAndroid() || isWindows()) {
+      setUrl("https://play.google.com/store/apps/details?id=net.ninjaHome.app");
+    } else {
+      // Default redirection if platform is not recognized
+      setUrl("https://play.google.com/store/apps/details?id=net.ninjaHome.app");
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
-    <footer className="footer">
+    <footer className={`footer ${props.class}`}>
       <div className="footerSub">
         <Container>
           <div className="footer_container">
@@ -95,7 +131,15 @@ const Footer = () => {
               </ul>
               <ul className="footerSub_center_links">
                 <li>
-                  <Link to={"/"}>تحميل التطبيق</Link>
+                  <Link to={'/download-ninja'}>
+                    تحميل التطبيق
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/hot-line"}>الخط الساخن</Link>
+                </li>
+                <li>
+                  <Link to={"/location"}>أماكن الفروع</Link>
                 </li>
                 <li>
                   <Link to={"/privacy-policy"}>سياسة الخصوصية</Link>
@@ -103,16 +147,10 @@ const Footer = () => {
                 <li>
                   <Link to={"/usage-policy"}>شروط الإستخدام</Link>
                 </li>
-                <li>
-                  <Link to={"/location"}>أماكن الفروع</Link>
-                </li>
-                <li>
-                  <Link to={"/hot-line"}>الخط الساخن</Link>
-                </li>
               </ul>
             </div>
           </div>
-          <span>نينجا هوم 2024 © جميع الحقوق محفوظة</span>
+          <span>نينجا هوم احدي مشروعات شركة سوقني 2024 © جميع الحقوق محفوظة</span>
         </Container>
       </div>
     </footer>

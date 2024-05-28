@@ -13,19 +13,24 @@ import "react-multi-carousel/lib/styles.css";
 import { PagesProvider } from "./contextApi/PagesContext";
 import { HelmetProvider } from "react-helmet-async";
 import { LocationProvider } from "./contextApi/LocationContext";
+import { AuthProvider } from "./contextApi/AuthContext";
+import ReactGA from 'react-ga';
 
+ReactGA.initialize("G-BCL6E9YC4N");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <PagesProvider>
-      <LocationProvider>
-        <BrowserRouter>
-          <HelmetProvider>
-            <App />
-          </HelmetProvider>
-        </BrowserRouter>
-      </LocationProvider>
-    </PagesProvider>
+    <BrowserRouter>
+      <PagesProvider>
+        <AuthProvider>
+          <LocationProvider>
+            <HelmetProvider>
+              <App />
+            </HelmetProvider>
+          </LocationProvider>
+        </AuthProvider>
+      </PagesProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

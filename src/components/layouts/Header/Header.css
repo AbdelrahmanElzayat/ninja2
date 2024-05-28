@@ -1,17 +1,21 @@
 .header,
-.header2 {
+.header2,
+.header3 {
   /* background: rgb(0, 0, 0,.5); */
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 100;
+  z-index: 100000000;
   padding: 1rem;
   transition: all 0.3s;
 }
 .header2 {
   background: #0d2842;
+}
+.header3 {
+  background: #00122C;
 }
 .header.scrolled {
   background: rgba(0, 0, 0, 0.4);
@@ -20,6 +24,7 @@
 }
 
 .header .container,
+.header3 .container,
 .header2 .container {
   display: flex;
   justify-content: space-between;
@@ -29,7 +34,7 @@
 }
 .logoHeader {
   width: 101px;
-  height: 41.477px;
+  /* height: 41.477px; */
 }
 .logoHeader img {
   width: 100%;
@@ -74,8 +79,8 @@
   border-radius: 90px;
   border: 2px solid #e6e8ec;
   background: #0a2640;
-  padding: 12px 33px;
-  font-size: 14px;
+  padding: 10px 22px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1rem;
 }
@@ -134,5 +139,8 @@
   }
   .active_menu {
     display: block !important;
+  }
+  .btndownload{
+    margin-left: 20px;
   }
 }

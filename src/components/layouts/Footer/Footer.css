@@ -94,3 +94,8 @@
     gap: 20px;
   }
 } */
+
+.footer3 .footerSub{
+  background: #001130 !important;
+  z-index: -1;
+}
