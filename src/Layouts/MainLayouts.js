@@ -14,7 +14,7 @@ const MainLayouts = (props) => {
         class={
           currentPathname === "/"
             ? `header`
-            : currentPathname === "/download-ninja"
+            : currentPathname === "/download-app"
               ? "header3"
               : "header2"
         }
@@ -22,7 +22,7 @@ const MainLayouts = (props) => {
       <main>{props.children}</main>
       <Footer
        class={
-          currentPathname === "/download-ninja"
+          currentPathname === "/download-app"
             ? `footer3`
             : ''
         }/>

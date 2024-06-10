@@ -22,7 +22,7 @@
   height: 500px;
   margin: 0 auto;
 }
-.handScroll {
+/* .handScroll {
   position: absolute;
   z-index: 1000;
   background: #000;
@@ -30,7 +30,17 @@
   opacity: 0.5;
   top: 0;
   border-radius: 35px;
-}
+} */
+.handScroll {
+    position: absolute;
+    z-index: 1000;
+    background: #000;
+    height: 100%;
+    opacity: 0.5;
+    top: 0;
+    border-radius: 35px;
+    pointer-events: none; /* هذا يجعل العنصر غير قابل للتفاعل معه */
+  }
 .handScroll > div{
     height: 100%;
 }

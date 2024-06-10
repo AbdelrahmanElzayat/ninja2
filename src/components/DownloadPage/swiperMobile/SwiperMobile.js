@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import iphone from "../../../assets/images/iphone.png";
 import "./SwiperMobile.css";
@@ -22,8 +22,12 @@ const SwiperMobile = () => {
     loop: true,
   };
   const { View } = useLottie(options);
-
   const [clicked, setClicked] = useState(false);
+
+  const handleSlideChange = () => {
+    // تحديث الحالة لتختفي الرسوم المتحركة عندما يتم السحب على الـ swiper
+    setClicked(true);
+  };
   return (
     <div className="swiperContainer">
       <div className="oval4">
@@ -36,11 +40,11 @@ const SwiperMobile = () => {
       <div className="bgmob">
         <img src={bgmob} alt="bgmob" />
       </div>
-      <div className="swiperMobile" onClick={() => setClicked(true)}>
+      <div className="swiperMobile">
         {!clicked ? <div className="handScroll">{View}</div> : ""}
         <img src={iphone} alt="iPhone Frame" className="iphone-frame" />
         <div className="iphone-content">
-          <Swiper className="mySwiper">
+          <Swiper className="mySwiper" onSlideChange={handleSlideChange}>
             <SwiperSlide>
               <img src={s1} alt="slide1" />
             </SwiperSlide>

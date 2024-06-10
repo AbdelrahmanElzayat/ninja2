@@ -1,0 +1,108 @@
+.HotLineBox {
+  padding: 80px 0;
+}
+.HotLineBox .HotLineBox_container {
+  width: 100%;
+  border-radius: 12px;
+  background: rgba(10, 38, 64, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 100px;
+  min-height: 60vh;
+}
+.HotLineBox img{
+    max-width: 400px;
+  }
+.hotLineCardsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.hotLineCard {
+  width: 100%;
+  border-radius: 12px;
+  background: #f2f3f4;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+.hotLineCard_right_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.hotLineCard_left button {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: #0066de;
+  padding: 10px 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hotLineCard_left button a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hotLineCard_right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.hotLineCard_right_head h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hotLineCard_right_body > p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hotLineCard_right_body > div {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.searchHotLine{
+    width: 100%;
+    border-radius: 24px;
+    background: #F2F3F4;
+    padding: 10px 35px;
+    position: relative;
+}
+.searchHotLine input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding: 12px 20px;
+}
+.searchHotLine svg{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media(max-width:767px){
+    .HotLineBox .HotLineBox_container{
+        padding: 40px 20px;
+    }
+}

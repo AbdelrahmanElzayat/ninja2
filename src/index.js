@@ -14,7 +14,8 @@ import { PagesProvider } from "./contextApi/PagesContext";
 import { HelmetProvider } from "react-helmet-async";
 import { LocationProvider } from "./contextApi/LocationContext";
 import { AuthProvider } from "./contextApi/AuthContext";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
+import { RegionProvider } from "./contextApi/RegionContext";
 
 ReactGA.initialize("G-BCL6E9YC4N");
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,7 +26,9 @@ root.render(
         <AuthProvider>
           <LocationProvider>
             <HelmetProvider>
-              <App />
+              <RegionProvider>
+                <App />
+              </RegionProvider>
             </HelmetProvider>
           </LocationProvider>
         </AuthProvider>

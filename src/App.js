@@ -14,6 +14,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RedirectToStore from "./pages/redirect/Redirect.js";
 import DownloadPage from "./pages/DownloadPage/DownloadPage.js";
+import Location2 from "./pages/location2/Location2.js";
+import HotLine from "./pages/HotLine/HotLine.js";
 function App() {
   // if ("geolocation" in navigator) {
   //   navigator.geolocation.getCurrentPosition(
@@ -39,11 +41,13 @@ function App() {
         <Route path="/blogDetails" element={<BlogDetails />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/usage-policy" element={<UsagePolicy />} />
-        <Route path="/location" element={<Location />} />
-        <Route path="/hot-line" element={<Numbers />} />
+        {/* <Route path="/location" element={<Location />} /> */}
+        <Route path="/location" element={<Location2 />} />
+        {/* <Route path="/hot-line" element={<Numbers />} /> */}
+        <Route path="/hot-line" element={<HotLine />} />
         <Route path="/delete-account" element={<DeleteAccount />} />
         <Route path="/download" element={<RedirectToStore />} />
-        <Route path="/download-ninja" element={<DownloadPage />} />
+        <Route path="/download-app" element={<DownloadPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

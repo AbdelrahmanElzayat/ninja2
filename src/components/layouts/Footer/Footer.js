@@ -38,7 +38,7 @@ const Footer = (props) => {
       // Default redirection if platform is not recognized
       setUrl("https://play.google.com/store/apps/details?id=net.ninjaHome.app");
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <footer className={`footer ${props.class}`}>
@@ -131,9 +131,7 @@ const Footer = (props) => {
               </ul>
               <ul className="footerSub_center_links">
                 <li>
-                  <Link to={'/download-ninja'}>
-                    تحميل التطبيق
-                  </Link>
+                  <Link to={"/download-app"}>تحميل التطبيق</Link>
                 </li>
                 <li>
                   <Link to={"/hot-line"}>الخط الساخن</Link>
@@ -150,7 +148,9 @@ const Footer = (props) => {
               </ul>
             </div>
           </div>
-          <span>نينجا هوم احدي مشروعات شركة سوقني 2024 © جميع الحقوق محفوظة</span>
+          <span>
+            نينجا هوم احدي مشروعات شركة سوقني 2024 © جميع الحقوق محفوظة
+          </span>
         </Container>
       </div>
     </footer>
